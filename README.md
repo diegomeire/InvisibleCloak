@@ -1,7 +1,7 @@
 # Invisible Cloak
 Invisible Cloak implemented on iOS with OpenCV
 
-## Instalation
+## Installation
 
 After cloning, run the following:
 ```bash
