@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA39179D23F06C4100BCC812 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA39179C23F06C4100BCC812 /* opencv2.framework */; };
+		FA7894242301A9DC00F29A44 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7894232301A9DC00F29A44 /* CameraViewController.swift */; };
+		FA7894272301E2A700F29A44 /* UICheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7894262301E2A700F29A44 /* UICheckbox.swift */; };
+		FAFACCDD22F27A4100E3EBBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFACCDC22F27A4100E3EBBB /* AppDelegate.swift */; };
+		FAFACCDF22F27A4100E3EBBB /* InvisibleCloakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFACCDE22F27A4100E3EBBB /* InvisibleCloakViewController.swift */; };
+		FAFACCE222F27A4100E3EBBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFACCE022F27A4100E3EBBB /* Main.storyboard */; };
+		FAFACCE422F27A4200E3EBBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFACCE322F27A4200E3EBBB /* Assets.xcassets */; };
+		FAFACCE722F27A4200E3EBBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFACCE522F27A4200E3EBBB /* LaunchScreen.storyboard */; };
+		FAFACCF522F27D0A00E3EBBB /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAFACCF422F27D0A00E3EBBB /* OpenCVWrapper.mm */; };
+		FAFACCFF22F283DB00E3EBBB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFACCFE22F283DB00E3EBBB /* AVFoundation.framework */; };
+		FAFACD0022F283EE00E3EBBB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFACCFC22F2828500E3EBBB /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA39179C23F06C4100BCC812 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = Carthage/Build/iOS/opencv2.framework; sourceTree = SOURCE_ROOT; };
+		FA7894232301A9DC00F29A44 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FA7894262301E2A700F29A44 /* UICheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICheckbox.swift; sourceTree = "<group>"; };
+		FAFACCD922F27A4100E3EBBB /* InvisibleCloak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvisibleCloak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFACCDC22F27A4100E3EBBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAFACCDE22F27A4100E3EBBB /* InvisibleCloakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvisibleCloakViewController.swift; sourceTree = "<group>"; };
+		FAFACCE122F27A4100E3EBBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAFACCE322F27A4200E3EBBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFACCE622F27A4200E3EBBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAFACCE822F27A4200E3EBBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFACCF322F27D0A00E3EBBB /* InvisibleCloak-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InvisibleCloak-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAFACCF422F27D0A00E3EBBB /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		FAFACCF622F27DA400E3EBBB /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		FAFACCF922F27EB900E3EBBB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FAFACCFC22F2828500E3EBBB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FAFACCFE22F283DB00E3EBBB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFACCD622F27A4100E3EBBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA39179D23F06C4100BCC812 /* opencv2.framework in Frameworks */,
+				FAFACD0022F283EE00E3EBBB /* CoreMedia.framework in Frameworks */,
+				FAFACCFF22F283DB00E3EBBB /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA7894222301A99F00F29A44 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAFACCDE22F27A4100E3EBBB /* InvisibleCloakViewController.swift */,
+				FA7894232301A9DC00F29A44 /* CameraViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FA7894252301E29700F29A44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA7894262301E2A700F29A44 /* UICheckbox.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAFACCD022F27A4100E3EBBB = {
+			isa = PBXGroup;
+			children = (
+				FAFACCDB22F27A4100E3EBBB /* InvisibleCloak */,
+				FAFACCDA22F27A4100E3EBBB /* Products */,
+				FAFACCFB22F2828400E3EBBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFACCDA22F27A4100E3EBBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFACCD922F27A4100E3EBBB /* InvisibleCloak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFACCDB22F27A4100E3EBBB /* InvisibleCloak */ = {
+			isa = PBXGroup;
+			children = (
+				FA7894252301E29700F29A44 /* Views */,
+				FA7894222301A99F00F29A44 /* View Controllers */,
+				FAFACCF222F27C9600E3EBBB /* OpenCV */,
+				FAFACCEE22F27C2200E3EBBB /* Framework */,
+				FAFACCDC22F27A4100E3EBBB /* AppDelegate.swift */,
+				FAFACCE022F27A4100E3EBBB /* Main.storyboard */,
+				FAFACCE322F27A4200E3EBBB /* Assets.xcassets */,
+				FAFACCE522F27A4200E3EBBB /* LaunchScreen.storyboard */,
+				FAFACCE822F27A4200E3EBBB /* Info.plist */,
+			);
+			path = InvisibleCloak;
+			sourceTree = "<group>";
+		};
+		FAFACCEE22F27C2200E3EBBB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				FA39179C23F06C4100BCC812 /* opencv2.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		FAFACCF222F27C9600E3EBBB /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				FAFACCF922F27EB900E3EBBB /* PrefixHeader.pch */,
+				FAFACCF622F27DA400E3EBBB /* OpenCVWrapper.h */,
+				FAFACCF422F27D0A00E3EBBB /* OpenCVWrapper.mm */,
+				FAFACCF322F27D0A00E3EBBB /* InvisibleCloak-Bridging-Header.h */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		FAFACCFB22F2828400E3EBBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAFACCFE22F283DB00E3EBBB /* AVFoundation.framework */,
+				FAFACCFC22F2828500E3EBBB /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFACCD822F27A4100E3EBBB /* InvisibleCloak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFACCEB22F27A4200E3EBBB /* Build configuration list for PBXNativeTarget "InvisibleCloak" */;
+			buildPhases = (
+				FAFACCD522F27A4100E3EBBB /* Sources */,
+				FAFACCD622F27A4100E3EBBB /* Frameworks */,
+				FAFACCD722F27A4100E3EBBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvisibleCloak;
+			productName = InvisibleCloak;
+			productReference = FAFACCD922F27A4100E3EBBB /* InvisibleCloak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFACCD122F27A4100E3EBBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Diege Miere";
+				TargetAttributes = {
+					FAFACCD822F27A4100E3EBBB = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = FAFACCD422F27A4100E3EBBB /* Build configuration list for PBXProject "InvisibleCloak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAFACCD022F27A4100E3EBBB;
+			productRefGroup = FAFACCDA22F27A4100E3EBBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFACCD822F27A4100E3EBBB /* InvisibleCloak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFACCD722F27A4100E3EBBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFACCE722F27A4200E3EBBB /* LaunchScreen.storyboard in Resources */,
+				FAFACCE422F27A4200E3EBBB /* Assets.xcassets in Resources */,
+				FAFACCE222F27A4100E3EBBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFACCD522F27A4100E3EBBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7894272301E2A700F29A44 /* UICheckbox.swift in Sources */,
+				FAFACCDF22F27A4100E3EBBB /* InvisibleCloakViewController.swift in Sources */,
+				FA7894242301A9DC00F29A44 /* CameraViewController.swift in Sources */,
+				FAFACCDD22F27A4100E3EBBB /* AppDelegate.swift in Sources */,
+				FAFACCF522F27D0A00E3EBBB /* OpenCVWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAFACCE022F27A4100E3EBBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFACCE122F27A4100E3EBBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAFACCE522F27A4200E3EBBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFACCE622F27A4200E3EBBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAFACCE922F27A4200E3EBBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAFACCEA22F27A4200E3EBBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAFACCEC22F27A4200E3EBBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BB88LDFV7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InvisibleCloak/Framework",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/InvisibleCloak/OpenCV/PrefixHeader.pch";
+				INFOPLIST_FILE = InvisibleCloak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.InvisibleCloak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InvisibleCloak/OpenCV/InvisibleCloak-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAFACCED22F27A4200E3EBBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BB88LDFV7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InvisibleCloak/Framework",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/InvisibleCloak/OpenCV/PrefixHeader.pch";
+				INFOPLIST_FILE = InvisibleCloak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.InvisibleCloak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InvisibleCloak/OpenCV/InvisibleCloak-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFACCD422F27A4100E3EBBB /* Build configuration list for PBXProject "InvisibleCloak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFACCE922F27A4200E3EBBB /* Debug */,
+				FAFACCEA22F27A4200E3EBBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFACCEB22F27A4200E3EBBB /* Build configuration list for PBXNativeTarget "InvisibleCloak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFACCEC22F27A4200E3EBBB /* Debug */,
+				FAFACCED22F27A4200E3EBBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFACCD122F27A4100E3EBBB /* Project object */;
+}
