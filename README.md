@@ -1,4 +1,4 @@
-# InvisibleCloak
+# Invisible Cloak
 Invisible Cloak implemented on iOS with OpenCV
 
 ## Instalation
