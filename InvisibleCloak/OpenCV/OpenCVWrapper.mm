@@ -51,6 +51,10 @@ using namespace saliency;
 
 
 @synthesize numberOfMeanColors = _numberOfMeanColors;
+@synthesize minBrightness = _minBrightness;
+@synthesize maxBrightness = _maxBrightness;
+@synthesize minSaturation = _minSaturation;
+@synthesize maxSaturation = _maxSaturation;
 
 - (instancetype)init {
     self = [super init];
@@ -183,22 +187,22 @@ using namespace saliency;
         if (i == 0){
             cv::inRange( hsv,
                         cv::Scalar( CLAMP( hue - 30, 0, hue - 30 ),
-                                    minSaturation, //( saturation * 0.1),
-                                    minBrightness),//( brightness * 0.1)),
+                                    _minSaturation, //( saturation * 0.1),
+                                    _minBrightness),//( brightness * 0.1)),
                         cv::Scalar( CLAMP( hue + 30, hue + 30, 180 ),
-                                    maxSaturation,//( saturation * 1.5),
-                                    maxBrightness),//( brightness * 1.5)),
+                                    _maxSaturation,//( saturation * 1.5),
+                                    _maxBrightness),//( brightness * 1.5)),
                         mask1);
         }
         else{
         
             cv::inRange( hsv,
                         cv::Scalar( CLAMP( hue - 30, 0, hue - 30),
-                                   minSaturation,//( saturation * 0.1),
-                                   minBrightness),//( brightness * 0.1)),//_value - _valueOffset),
+                                   _minSaturation,//( saturation * 0.1),
+                                   _minBrightness),//( brightness * 0.1)),//_value - _valueOffset),
                         cv::Scalar( CLAMP( hue + 30, hue + 30, 180 ),
-                                   maxSaturation, //( saturation * 1.5),
-                                   maxBrightness),//( brightness * 1.5)),
+                                   _maxSaturation, //( saturation * 1.5),
+                                   _maxBrightness),//( brightness * 1.5)),
                         auxMask);
         
             mask1 = mask1 + auxMask;

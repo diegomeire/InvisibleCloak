@@ -45,6 +45,13 @@
 
 @property (nonatomic, assign) CGFloat hue;
 @property (nonatomic, assign) CGFloat saturation;
+
+@property (nonatomic, assign) CGFloat minBrightness;
+@property (nonatomic, assign) CGFloat maxBrightness;
+
+@property (nonatomic, assign) CGFloat minSaturation;
+@property (nonatomic, assign) CGFloat maxSaturation;
+
 @property (nonatomic, assign) CGFloat value;
 @property (nonatomic, assign) bool fullColorRange;
 

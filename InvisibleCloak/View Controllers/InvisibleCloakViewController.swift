@@ -12,13 +12,46 @@ class InvisibleCloakViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var sliderMinBrightness: UISlider!
+    @IBOutlet weak var sliderMaxBrightness: UISlider!
+    
+    @IBOutlet weak var sliderMinSaturation: UISlider!
+    @IBOutlet weak var sliderMaxSaturation: UISlider!
     
     var colorsToFind = [UIColor]()
     
     
+    @objc func sliderChanged( sender: UISlider ){
+        switch sender.tag {
+        case 0:
+            OpenCVWrapper.shared()?.minBrightness = CGFloat(sender.value)
+        case 1:
+            OpenCVWrapper.shared()?.maxBrightness = CGFloat(sender.value)
+        case 2:
+             OpenCVWrapper.shared()?.minSaturation = CGFloat(sender.value)
+        case 3:
+             OpenCVWrapper.shared()?.maxSaturation = CGFloat(sender.value)
+        default:
+             print("default")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sliderMinBrightness.addTarget(self, action: #selector(sliderChanged), for: UIControl.Event.valueChanged)
+        sliderMaxBrightness.addTarget(self, action: #selector(sliderChanged), for: UIControl.Event.valueChanged)
+        sliderMinSaturation.addTarget(self, action: #selector(sliderChanged), for: UIControl.Event.valueChanged)
+        sliderMaxSaturation.addTarget(self, action: #selector(sliderChanged), for: UIControl.Event.valueChanged)
+        
+        sliderMinBrightness.value = 50
+        OpenCVWrapper.shared()?.minBrightness = CGFloat(sliderMinBrightness.value)
+        sliderMaxBrightness.value = 255
+        OpenCVWrapper.shared()?.maxBrightness = CGFloat(sliderMaxBrightness.value)
+        sliderMinSaturation.value = 50
+        OpenCVWrapper.shared()?.minSaturation = CGFloat(sliderMinSaturation.value)
+        sliderMaxSaturation.value = 255
+        OpenCVWrapper.shared()?.maxSaturation = CGFloat(sliderMaxSaturation.value)
     }
     
     
@@ -27,17 +60,7 @@ class InvisibleCloakViewController: UIViewController {
         OpenCVWrapper.shared().startVideo()
         
         
-        let gradient = CAGradientLayer()
-        
-        var cgArray = [CGColor]()
-        for c in colorsToFind {
-            cgArray.append(c.cgColor)
-        }
-        
-        gradient.frame = colorView.bounds
-        gradient.colors = cgArray
-        
-        colorView.layer.insertSublayer(gradient, at: 0)
+       
     }
 
     
