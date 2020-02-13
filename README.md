@@ -32,6 +32,14 @@ carthage update
 </kbd>
 
 
+## Thanks
+
+This project was possible thanks to previous projects such as the following:
+https://www.learnopencv.com/invisibility-cloak-using-color-detection-and-segmentation-with-opencv/ (Kaustubh Sadekar)
+https://medium.com/@soumyapatil031/invisible-cloak-using-opencv-8f4acdf21290 (Soumya Patil)
+
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
