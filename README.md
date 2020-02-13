@@ -9,12 +9,15 @@ carthage update
 ````
 ## How to use
 Take a photo of the object containing the colors you want to segment
-
+![Object](IMG_5179.JPG)
 
 Select which colors you want to segment
+![Colors](IMG_5180.PNG)
 
-Adjust the contrast and 
+Place the camera at a fix and steady place. Take a photo of the background without you
+![Colors](IMG_5178.PNG)
 
+Adjust the brightness and contrast to achieve the best results.
 
 Have fun!
 ![Demo](InvisibleCloak.gif)
