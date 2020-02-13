@@ -12,10 +12,10 @@ Take a photo of the object containing the colors you want to segment
 ![Object](IMG_5179.JPG)
 
 Select which colors you want to segment
-![Colors](IMG_5180.PNG)
+![Colors](IMG_5180.JPG)
 
 Place the camera at a fix and steady place. Take a photo of the background without you
-![Colors](IMG_5178.PNG)
+![Colors](IMG_5178.JPG)
 
 Adjust the brightness and contrast to achieve the best results.
 
