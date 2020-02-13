@@ -8,24 +8,24 @@ After cloning, run the following:
 carthage update
 ````
 ## How to use
-### Take a photo of the object containing the colors you want to segment
+#### Take a photo of the object containing the colors you want to segment
 <kbd>
   <img src="IMG_5179.JPG"/>
 </kbd>
 
-### Select which colors you want to segment
+#### Select which colors you want to segment
 <kbd>
     <img src="IMG_5180.JPG"/>
 </kbd>
 
-### Place the camera at a fix and steady place. Take a photo of the background without you
+#### Place the camera at a fix and steady place. Take a photo of the background without you
 <kbd>
     <img src="IMG_5178.JPG"/>
 </kbd>
 
-### Adjust the brightness and contrast to achieve the best results.
+#### Adjust the brightness and contrast to achieve the best results.
 
-### Have fun!
+#### Have fun!
 
 <kbd>
       <img src="InvisibleCloak.gif"/>
