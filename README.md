@@ -34,9 +34,9 @@ carthage update
 
 ## Thanks
 
-This project was possible thanks to previous projects such as the following:
-https://www.learnopencv.com/invisibility-cloak-using-color-detection-and-segmentation-with-opencv/ (Kaustubh Sadekar)
-https://medium.com/@soumyapatil031/invisible-cloak-using-opencv-8f4acdf21290 (Soumya Patil)
+#### This project was possible thanks to previous projects such as the following:
+##### https://www.learnopencv.com/invisibility-cloak-using-color-detection-and-segmentation-with-opencv/ (Kaustubh Sadekar)
+##### https://medium.com/@soumyapatil031/invisible-cloak-using-opencv-8f4acdf21290 (Soumya Patil)
 
 
 
