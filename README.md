@@ -10,17 +10,17 @@ carthage update
 ## How to use
 ### Take a photo of the object containing the colors you want to segment
 <kbd>
-![Object](IMG_5179.JPG)
+  <img src="IMG_5179.JPG"/>
 </kbd>
 
 ### Select which colors you want to segment
 <kbd>
-![Colors](IMG_5180.JPG)
+    <img src="IMG_5180.JPG"/>
 </kbd>
 
 ### Place the camera at a fix and steady place. Take a photo of the background without you
 <kbd>
-![Colors](IMG_5178.JPG)
+    <img src="IMG_5178.JPG"/>
 </kbd>
 
 ### Adjust the brightness and contrast to achieve the best results.
@@ -28,7 +28,7 @@ carthage update
 ### Have fun!
 
 <kbd>
-![Demo](InvisibleCloak.gif)
+      <img src="InvisibleCloak.gif"/>
 </kbd>
 
 
